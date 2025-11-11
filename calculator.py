@@ -1,10 +1,19 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+#https://github.com/5quidL0rd/lab10-NW-CH
+#Partner 1: Blake Fowler
+#Partner 2: Grayson Christie 
 
-One function per operation, in order.
-"""
+
+
+
 import math
+
+def square_root(a):
+    if a < 0:
+        raise ValueError("Must be a positive number")
+    return math.sqrt(a)
+
+def hypotenuse(a,b):
+    return math.hypot(a,b)
 
 def add(a, b):
     return a + b
