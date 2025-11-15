@@ -24,13 +24,13 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(sub(-5, -2), -3)
 
     ######## Partner 1
-     def test_multiply(self): 
+    def test_multiply(self):
           
           self.assertEqual(mul(3,3), 9)
           self.assertEqual(mul(10, 5), 50)
           self.assertEqual(mul(11, 100), 1100)
 
-     def test_divide(self):
+    def test_divide(self):
           
           self.assertEqual(div(3,3), 1)
 
@@ -39,32 +39,32 @@ class TestCalculator(unittest.TestCase):
           self.assertEqual(div(8, 2), 4)
 
     ######## Partner 2
-        def test_divide_by_zero(self):  # 1 assertion
-            with self.assertRaises(ZeroDivisionError):
-                div(5, 0)
+    def test_divide_by_zero(self):  # 1 assertion
+        with self.assertRaises(ZeroDivisionError):
+            div(5, 0)
 
-        def test_logarithm(self):  # 3 assertions
-            self.assertAlmostEqual(log(8, 2), 3)
-            self.assertAlmostEqual(log(100, 10), 2)
-            self.assertAlmostEqual(log(27, 3), 3)
+    def test_logarithm(self):  # 3 assertions
+        self.assertAlmostEqual(log(8, 2), 3)
+        self.assertAlmostEqual(log(100, 10), 2)
+        self.assertAlmostEqual(log(27, 3), 3)
 
-        def test_log_invalid_base(self):  # 1 assertion
-            with self.assertRaises(ValueError):
-                log(10, 1)
+    def test_log_invalid_base(self):  # 1 assertion
+        with self.assertRaises(ValueError):
+            log(10, 1)
     
     ######## Partner 1
-     def test_log_invalid_argument(self):
+    def test_log_invalid_argument(self):
           
           with self.assertRaises(ValueError):
                log(2, 0)
 
-     def test_hypotenuse(self):
+    def test_hypotenuse(self):
           
           self.assertEqual(hypotenuse(3, 4), 5.0)
           self.assertEqual(hypotenuse(5, 12), 13.0)
           self.assertEqual(hypotenuse(1,1), math.sqrt(2), places=5)
 
-     def test_sqrt(self):
+    def test_sqrt(self):
           
           with self.assertRaises(ValueError):
             square_root(-1)
