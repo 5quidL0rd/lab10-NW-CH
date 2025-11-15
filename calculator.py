@@ -36,6 +36,9 @@ def logarithm(a, b):
         raise ValueError("Argument must be positive")
     return math.log(a) / math.log(b)
 
+def log(a, b):
+    return logarithm(a, b)
+
 def exp(a, b):
     return a ** b
 
